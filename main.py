@@ -30,8 +30,8 @@ if __name__ == '__main__':
     print(df_desired)
     print()
 
-     # Advice to invest everything into the stock with the highest possible diff, so only do one buy action each month
-     # to avoid paying too much transaction fees
+    # Advice to invest everything into the stock with the highest possible diff, so only do one buy action each month
+    # to avoid paying too much transaction fees
     (isin, name) = df_desired.sort("diff", descending=True).select("isin", "name").row(0)
     print(f"Advice: invest funds into '{name}' ({isin}).")
     print(f"Total account value: {df_desired.select("value").sum().item()} EUR")
