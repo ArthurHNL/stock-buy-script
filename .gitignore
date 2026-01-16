@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Actual portfolio & ratios, don't want to push to GH accidentally
+portfolio*.csv
+Portfolio*.csv
+!Portfolio_dummy.csv
+desired_ratios*.csv
+!desired_ratios_dummy.csv

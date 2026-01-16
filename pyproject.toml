@@ -1,0 +1,19 @@
+[project]
+name = "stock-buy"
+version = "0.1.0"
+description = "Tool to calculate which stock to buy."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "notebook>=7.5.2",
+    "polars>=1.37.1",
+]
+authors = [
+    { name = "Arthur Heidt" }
+]
+license = "MIT"
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple/"
+default = true
